@@ -2,24 +2,56 @@
 <html>
 <head>
 <title>Alex Wen</title>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="normalize.css" />
 <style type="text/css">
-	.title{
-		padding: 100px;
-		font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        background: #282828;
+	body{
+		background: #E2E2E2
 	}
+	.top-bar{
+		height: 100px;
+		background-color: #4e4e4e
+	}
+	
+	.bottom-bar{
+		height: 200px;
+		background-color: #383838
+	}
+	
+	p.title{
+		font-size: 32px;
+        
+		color: #FFFFFF;
+        text-align: center;
+		padding: 95px;
+		margin: 0px;
+	}
+	
+	#pic{
+		border: 4px solid #FFF;
+		border-radius: 138px;
+		background:url(http://i.imgur.com/uxrF45j.jpg) no-repeat;
+		background-size: 150px 150px;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		top: -275px;
+		position: relative;
+	}
+	
 </style>
 
 </head>
 <body>
-	<div class="title">
-		<p style="color:#ffffff;">Alexander Wen</p>
+	<div class="top-bar">
 	</div>
+	<div class="bottom-bar">
+		<p class="title">
+			<b>Alexander Wen </b><br>
+			Computer Engineer
+		</p>
+	</div>
+	<div id="pic"></div>
 </body>
 </html>                                  		
