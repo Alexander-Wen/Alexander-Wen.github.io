@@ -5,53 +5,66 @@
 <link rel="stylesheet" href="normalize.css" />
 <style type="text/css">
 	body{
-		background: #E2E2E2
-	}
-	.top-bar{
-		height: 100px;
-		background-color: #4e4e4e
+		background: #3A3A3A;
 	}
 	
-	.bottom-bar{
-		height: 200px;
-		background-color: #383838
+	.middle-bar{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #DDD;
+		
+	}
+	
+	.menu-bar{
+		width: 180px;
+		background-color: #424242;
 	}
 	
 	p.title{
-		font-size: 32px;
-        
-		color: #FFFFFF;
-        text-align: center;
-		padding: 95px;
-		margin: 0px;
+		font-size: 45px;
+		color: #000;
+		margin: 40px 0px 0px 80px;
+		padding: 0px;
+	}
+	p.subtitle{
+		font-size: 22.4px;
+		color: #000;
+		margin: 0px 0px 40px 80px;
+		padding: 0px;
+		vertical-align: text-top;
 	}
 	
 	#pic{
-		border: 4px solid #FFF;
+		border: 3px solid #FFF;
 		border-radius: 138px;
 		background:url(http://i.imgur.com/uxrF45j.jpg) no-repeat;
-		background-size: 150px 150px;
-		width: 150px;
-		height: 150px;
+		background-size: 125px 125px;
+		width: 125px;
+		height: 125px;
 		border-radius: 50%;
-		margin-left: auto;
-		margin-right: auto;
-		top: -275px;
-		position: relative;
+		margin: auto auto auto auto;
 	}
 	
 </style>
 
 </head>
 <body>
-	<div class="top-bar">
-	</div>
-	<div class="bottom-bar">
-		<p class="title">
-			<b>Alexander Wen </b><br>
-			Computer Engineer
-		</p>
-	</div>
-	<div id="pic"></div>
+	<table class="middle-bar">
+		<tr>
+			<td style="vertical-align: text-top;">
+				<p class="title">
+					Alexander Wen
+				</p>
+				<p class="subtitle">
+					Computer Engineering Student</br>
+					at the University of Waterloo
+				</p>
+			</td>
+			<td class="menu-bar">
+				<div id="pic"></div>
+			</td>
+		</tr>
+	</table>
 </body>
 </html>                                  		
