@@ -5,28 +5,44 @@
 <link rel="stylesheet" href="normalize.css" />
 <style type="text/css">
 	body{
-		background: #3A3A3A;
+		background: #2D2D2D;
 	}
 	
 	.middle-bar{
 		width: 720px;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: #DDD;
+		background-color: #E4E4E4;
 		
 	}
 	
 	.menu-bar{
 		padding: 0px;
 		width: 180px;
-		background-color: #424242;
+		background-color: #393939;
 	}
 	
 	.menu{
+		
+	}
+	
+	p.menu-text{
 		font-size: 20px;
-		color: #FFF;
-		margin: 0px;
-		padding: 15px 0px 0px 15px;
+		color: #E4E4E4;
+		margin: 0px 16px 16px 16px;
+		padding: 0px;
+	}
+	
+	a:hover{
+		color: #AEAEAE;
+	}
+	
+	c:hover{
+		color: #AEAEAE;
+	}
+	
+	d:hover{
+		color: #AEAEAE;
 	}
 	
 	p.title{
@@ -44,7 +60,7 @@
 	}
 	
 	#pic{
-		border: 3px solid #FFF;
+		border: 3px solid #E4E4E4;
 		border-radius: 138px;
 		background:url(http://i.imgur.com/uxrF45j.jpg) no-repeat;
 		background-size: 125px 125px;
@@ -53,11 +69,6 @@
 		border-radius: 50%;
 		margin: auto auto auto auto;
 	}
-	
-	#placeholder{
-		
-	}
-	
 </style>
 
 </head>
@@ -78,18 +89,32 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="padding: 0px">
+			<td style="padding: 0px; vertical-align: top;">
 				<p style="margin: 0px"><img src = "http://i.imgur.com/CrsoJbL.gif" width="540" style="padding: 0px"/></pr>
 			</td>
-			<td class="menu-bar" style="vertical-align: text-top;">
-				<p class="menu">Home</p>
-				<p class="menu">Don't</p>
-				<p class="menu">You</p>
-				<p class="menu">Like</p>
-				<p class="menu">My</p>
-				<p class="menu">Placeholder</p>
-				<p class="menu">Image</p>
-				<p class="menu">?</p>
+			<td class="menu-bar" style="vertical-align: top;">
+				<table class="menu">
+					<tr>
+						<td>
+							<p class="menu-text">
+								<a>Main</a>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="menu-text">
+								<c>Other</c>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="menu-text">
+								<d>Stuff</d>
+							</p>
+						</td>
+					</tr>
 			</td>
 		</tr>
 	</table>
