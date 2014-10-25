@@ -13,36 +13,32 @@
 		margin-left: auto;
 		margin-right: auto;
 		background-color: #E4E4E4;
-		
 	}
 	
 	.menu-bar{
-		padding: 0px;
-		width: 180px;
+		padding: 0px 16px 16px 16px;
+		width: 100%;
 		background-color: #393939;
 	}
 	
 	.menu{
-		
+		border-top: 1px solid #4C4C4C;
+		border-bottom: 1px solid #4C4C4C;
+		border-collapse: collapse;
+		width: 100%;
+		padding: 0px;
+	}
+	
+	.menu-text:hover{
+		background-color: #4C4C4C;
 	}
 	
 	p.menu-text{
 		font-size: 20px;
 		color: #E4E4E4;
-		margin: 0px 16px 16px 16px;
-		padding: 0px;
+		margin: 0px;
+		padding: 8px;
 	}
-	
-	a:link{
-		color: #E4E4E4;
-	}
-	a:visited {
-		color: #E4E4E4;
-	}
-	a:hover{
-		color: #AEAEAE;
-	}
-	
 	
 	p.title{
 		font-size: 45px;
@@ -70,6 +66,17 @@
 	}
 </style>
 
+<script>
+var x;
+x = function(a, b) {
+	return a + b;
+};
+
+var y = function() {
+	alert("sum is " + x(5, 10));
+};
+</script>
+
 </head>
 <body>
 	<table class="middle-bar">
@@ -94,26 +101,27 @@
 			<td class="menu-bar" style="vertical-align: top;">
 				<table class="menu">
 					<tr>
-						<td>
-							<p class="menu-text">
-								<a href="https://www.facebook.com/">Main</a>
+						<td class="menu">
+							<p class="menu-text" onclick="location.href='https://www.facebook.com/Ricey.Wen'">
+								Facebook
 							</p>
 						</td>
 					</tr>
 					<tr>
-						<td>
-							<p class="menu-text">
-								<a href="https://www.google.ca">Other</a>
+						<td class="menu">
+							<p class="menu-text" onclick="location.href='https://www.google.ca'">
+								Google
 							</p>
 						</td>
 					</tr>
 					<tr>
-						<td>
-							<p class="menu-text">
-								<a href="http://fediafedia.com/prank/win7/index.html">Stuff</a>
+						<td class="menu">
+							<p class="menu-text" onclick="location.href='http://fediafedia.com/prank/win7/index.html'">
+								Press F11
 							</p>
 						</td>
 					</tr>
+				</table>
 			</td>
 		</tr>
 	</table>
