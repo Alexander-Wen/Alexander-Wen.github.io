@@ -26,18 +26,25 @@
 		border-bottom: 1px solid #4C4C4C;
 		border-collapse: collapse;
 		width: 100%;
-		padding: 0px;
+		padding: 8px 0px 8px 0px;
+		border: 0px;
 	}
 	
-	.menu-text:hover{
-		background-color: #4C4C4C;
-	}
-	
-	p.menu-text{
+	a{
+		border-top: 1px solid #4C4C4C;
+		border-bottom: 1px solid #4C4C4C;
+		border-collapse: collapse;
+		
+		width: 100%;
 		font-size: 20px;
 		color: #E4E4E4;
 		margin: 0px;
 		padding: 8px;
+		text-decoration: none;
+	}
+	
+	a:hover{
+		background-color: #4C4C4C;
 	}
 	
 	p.title{
@@ -66,17 +73,6 @@
 	}
 </style>
 
-<script>
-var x;
-x = function(a, b) {
-	return a + b;
-};
-
-var y = function() {
-	alert("sum is " + x(5, 10));
-};
-</script>
-
 </head>
 <body>
 	<table class="middle-bar">
@@ -99,26 +95,26 @@ var y = function() {
 				<p style="margin: 0px"><img src = "http://i.imgur.com/CrsoJbL.gif" width="540" style="padding: 0px"/></p>
 			</td>
 			<td class="menu-bar" style="vertical-align: top;">
-				<table class="menu">
-					<tr>
+				<table>
+					<tr class="menu">
 						<td class="menu">
-							<p class="menu-text" onclick="location.href='https://www.facebook.com/Ricey.Wen'">
-								Facebook
-							</p>
+							<a href="https://www.facebook.com/Ricey.Wen">
+								<span style="width: 128px; display:inline-block;">Facebook</span>
+							</a>
 						</td>
 					</tr>
-					<tr>
+					<tr class="menu">
 						<td class="menu">
-							<p class="menu-text" onclick="location.href='https://www.google.ca'">
-								Google
-							</p>
+							<a href="https://www.google.ca">
+								<span style="width: 128px; display:inline-block;">Google</span>
+							</a>
 						</td>
 					</tr>
-					<tr>
+					<tr class="menu">
 						<td class="menu">
-							<p class="menu-text" onclick="location.href='http://fediafedia.com/prank/win7/index.html'">
-								Press F11
-							</p>
+							<a  href="http://fediafedia.com/prank/win7/index.html">
+								<span style="width: 128px; display:inline-block;">Press F11</span>
+							</a>
 						</td>
 					</tr>
 				</table>
