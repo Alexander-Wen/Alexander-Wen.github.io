@@ -4,7 +4,6 @@
 <title>Alex Wen</title>
 <link rel="stylesheet" href="normalize.css" />
 <link rel="shortcut icon" href="http://www.alexanderwen.me/favicon.ico" />
-<link rel="icon" type="image/ico" href="http://www.alexanderwen.me/favicon.ico"/>
 <style type="text/css">
 	body{
 		background: #2D2D2D;
@@ -63,12 +62,7 @@
 		vertical-align: text-top;
 	}
 	
-	p.heading{
-		font-size: 30px;
-		padding: 15px 15px 0px 15px;
-		margin: 0px;
-	}
-	p.body{
+	p#body{
 		padding: 0px 15px 15px 15px;
 		margin: 0px;
 	}
@@ -105,31 +99,22 @@
 		<tr>
 			<td style="padding: 0px; vertical-align: top;">
 				<p style="margin: 0px"><img src = "http://i.imgur.com/CrsoJbL.gif" width="540" style="padding: 0px"/></p>
-				<p class="heading">Lorem Ipsum<p>
-				<p class="body">
-					dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<p>
+				<p id="body">
+				</p>
 			</td>
 			<td class="menu-bar" style="vertical-align: top;">
 				<table>
 					<tr class="menu">
 						<td class="menu">
-							<a href="https://www.facebook.com/Ricey.Wen">
-								<span style="width: 128px; display:inline-block;">Facebook</span>
+							<a onclick="homeFunc();">
+								<span style="width: 128px; display:inline-block;">Home</span>
 							</a>
 						</td>
 					</tr>
 					<tr class="menu">
 						<td class="menu">
-							<a href="http://www.tonyzou.com">
-								<span style="width: 128px; display:inline-block;">Google</span>
-							</a>
-						</td>
-					</tr>
-					<tr class="menu">
-						<td class="menu">
-							<a  href="http://fediafedia.com/prank/win7/index.html">
-								<span style="width: 128px; display:inline-block;">Press F11</span>
+							<a onclick="blogFunc();">
+								<span style="width: 128px; display:inline-block;">Blog</span>
 							</a>
 						</td>
 					</tr>
@@ -137,5 +122,45 @@
 			</td>
 		</tr>
 	</table>
+	<script>
+		var x = document.getElementById("body");
+		
+		var buttons = ["one","two"];
+		var currentPage = -1;
+		
+		reqListener = function() {
+		  console.log(this.responseText);
+		  x.innerHTML = this.responseText;
+		};
+		
+		
+		
+		var navigate = function(page) {
+			if (page == -1) return;
+			
+		};
+
+		function homeFunc() {
+			/*
+			var back = document.getElementsByTagName("a");
+			for (var i = 0; i < back.length; ++i) {
+				back[i].style["background-color"] = "#000";
+			}
+			*/
+			var oReq = new XMLHttpRequest();
+			oReq.onload = reqListener;
+			oReq.open("get", "home/Home.txt", true);
+			oReq.send();
+		}
+		
+		function blogFunc() {
+			var oReq = new XMLHttpRequest();
+			oReq.onload = reqListener;
+			oReq.open("get", "blog_posts/1.txt", true);
+			oReq.send();
+		}
+		
+		homeFunc();
+	</script>
 </body>
-</html>                                  		
+</html>
