@@ -1,0 +1,5 @@
+<p style="font-size: 30px; padding: 15px 0px 0px 0px; margin: 0px;">Projects</p>
+
+<p style="font-size: 20px; padding: 15px 0px 15px 0px; margin: 0px;">LaTeX</p>
+
+I plan on coding my version of LaTeX in C++

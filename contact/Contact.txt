@@ -1,0 +1,6 @@
+<p style="font-size: 30px; padding: 15px 0px 15px 0px; margin: 0px;">Contact Me</p>
+
+Email: alex@alexanderwen.me</br>
+Cell: (613)-857-7088 </br>
+Github: <a href="https://github.com/Alexander-Wen">https://github.com/Alexander-Wen</a></br>
+Facebook: <a href="https://www.facebook.com/Ricey.Wen">https://www.facebook.com/Ricey.Wen<a>

@@ -32,6 +32,10 @@
 	}
 	
 	a{
+		
+	}
+	
+	.button{
 		border-top: 1px solid #4C4C4C;
 		border-bottom: 1px solid #4C4C4C;
 		border-collapse: collapse;
@@ -44,7 +48,7 @@
 		text-decoration: none;
 	}
 	
-	a:hover{
+	.button:hover{
 		background-color: #4C4C4C;
 	}
 	
@@ -106,15 +110,36 @@
 				<table>
 					<tr class="menu">
 						<td class="menu">
-							<a onclick="homeFunc();">
+							<a class="button" onclick="homeFunc();">
 								<span style="width: 128px; display:inline-block;">Home</span>
 							</a>
 						</td>
 					</tr>
 					<tr class="menu">
 						<td class="menu">
-							<a onclick="blogFunc();">
+							<a class="button" onclick="projFunc();">
+								<span style="width: 128px; display:inline-block;">Projects</span>
+							</a>
+						</td>
+					</tr>
+					<tr class="menu">
+						<td class="menu">
+							<a class="button" onclick="resumeFunc();">
+								<span style="width: 128px; display:inline-block;">Resume</span>
+							</a>
+						</td>
+					</tr>
+					<tr class="menu">
+						<td class="menu">
+							<a class="button" onclick="blogFunc();">
 								<span style="width: 128px; display:inline-block;">Blog</span>
+							</a>
+						</td>
+					</tr>
+					<tr class="menu">
+						<td class="menu">
+							<a class="button" onclick="contactFunc();">
+								<span style="width: 128px; display:inline-block;">Contact Me</span>
 							</a>
 						</td>
 					</tr>
@@ -153,10 +178,31 @@
 			oReq.send();
 		}
 		
+		function projFunc() {
+			var oReq = new XMLHttpRequest();
+			oReq.onload = reqListener;
+			oReq.open("get", "projects/LaTeX.txt", true);
+			oReq.send();
+		}
+		
+		function resumeFunc() {
+			var oReq = new XMLHttpRequest();
+			oReq.onload = reqListener;
+			oReq.open("get", "resume/Resume.txt", true);
+			oReq.send();
+		}
+		
 		function blogFunc() {
 			var oReq = new XMLHttpRequest();
 			oReq.onload = reqListener;
-			oReq.open("get", "blog_posts/1.txt", true);
+			oReq.open("get", "blog/1.txt", true);
+			oReq.send();
+		}
+		
+		function contactFunc() {
+			var oReq = new XMLHttpRequest();
+			oReq.onload = reqListener;
+			oReq.open("get", "contact/Contact.txt", true);
 			oReq.send();
 		}
 		
