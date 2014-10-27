@@ -143,6 +143,13 @@
 							</a>
 						</td>
 					</tr>
+					<tr class="menu">
+						<td class="menu">
+							<a class="button" onclick="otherFunc();">
+								<span style="width: 128px; display:inline-block;">Other</span>
+							</a>
+						</td>
+					</tr>
 				</table>
 			</td>
 		</tr>
@@ -203,6 +210,13 @@
 			var oReq = new XMLHttpRequest();
 			oReq.onload = reqListener;
 			oReq.open("get", "contact/Contact.txt", true);
+			oReq.send();
+		}
+		
+		function otherFunc() {
+			var oReq = new XMLHttpRequest();
+			oReq.onload = reqListener;
+			oReq.open("get", "other/test.txt", true);
 			oReq.send();
 		}
 		
