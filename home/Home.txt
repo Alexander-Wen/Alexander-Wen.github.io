@@ -1,6 +1,0 @@
-<p style="font-size: 30px; padding: 15px 0px 15px 0px; margin: 0px;">Home</p>
-
-This is the personal website of Alexander Wen. This site isn't complete yet, so don't expect too much from it.
-
-
-
