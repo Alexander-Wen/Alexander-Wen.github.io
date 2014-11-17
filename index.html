@@ -2,147 +2,135 @@
 <html>
 <head>
 <title>Alex Wen</title>
-<link rel="stylesheet" href="normalize.css" />
+<link rel="stylesheet" href="../normalize.css" />
 <link rel="shortcut icon" href="http://www.alexanderwen.me/favicon.ico" />
 <style type="text/css">
 	body{
-		background: #2D2D2D;
+		background: #f5f5f5;
+	}
+	
+	#top-bar{
+		height: 80px;
+		background-color: #8a8a8a;
 	}
 	
 	.middle-bar{
 		width: 720px;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: #E4E4E4;
 	}
-	
-	.menu-bar{
-		padding: 0px 16px 16px 16px;
-		width: 100%;
-		background-color: #393939;
-	}
-	
-	.menu{
-		border-top: 1px solid #4C4C4C;
-		border-bottom: 1px solid #4C4C4C;
-		border-collapse: collapse;
-		width: 100%;
-		padding: 8px 0px 8px 0px;
-		border: 0px;
-	}
-	
-	.button{
-		border-top: 1px solid #4C4C4C;
-		border-bottom: 1px solid #4C4C4C;
-		border-collapse: collapse;
-		
-		width: 100%;
-		font-size: 20px;
-		color: #E4E4E4;
-		margin: 0px;
-		padding: 8px;
-		text-decoration: none;
-	}
-	
-	.button:hover{
-		background-color: #4C4C4C;
-	}
-	
-	p.title{
-		font-size: 45px;
-		color: #000;
-		margin: 40px 0px 0px 80px;
-		padding: 0px;
-	}
-	p.subtitle{
-		font-size: 22.4px;
-		color: #000;
-		margin: 0px 0px 40px 80px;
-		padding: 0px;
-		vertical-align: text-top;
+	.bottom-bar{
+		height: 40px;
+		background-color: #8a8a8a;
+		margin: 50px 0px 0px 0px;
 	}
 	
 	p#title{
-		font-size: 23px;
-		padding: 15px 15px 15px 15px;
-		margin: 0px;
+		text-align: center;
+		font-size: 70px;
+		margin: 100px 0px 0px 0px;
 	}
-	p#body{
-		padding: 0px 15px 15px 15px;
-		margin: 0px;
+	p#subtitle{
+		font-size: 30px;
+		margin: 50px 0px 0px 0px;
+	}
+	p#subsubtitle{
+		font-size: 20px;
+		margin: 10px 0px 0px 0px;
+	}
+	p#content{
+		margin: 5px 0px 0px 0px;
 	}
 	
-	#pic{
-		border: 3px solid #E4E4E4;
-		border-radius: 138px;
-		background:url(http://i.imgur.com/uxrF45j.jpg) no-repeat;
-		background-size: 125px 125px;
-		width: 125px;
-		height: 125px;
-		border-radius: 50%;
-		margin: auto;
+	hr{
+		margin: 0px auto 0px auto;
+		width: 200px;
+		color: #f00;
+		background-color: #f00;	
+	}
+	
+	p#about-me{
+		text-align: center;
+		font-size: 16px;
+		margin: 0px;
+		padding: 50px;
+	}
+	
+	a{
+		text-decoration: none;
+		color: #000;
+		font-size: 18px;
 	}
 </style>
 
 </head>
-<body>
-<table class="middle-bar">
-		<tr>
-			<td style="vertical-align: text-top;">
-				<p class="title">
-					Alexander Wen
-				</p>
-				<p class="subtitle">
-					Computer Engineer (Term 1A)</br>
-					University of Waterloo
-				</p>
-			</td>
-			<td class="menu-bar">
-				<div id="pic" href="/home/"></div>
-			</td>
-		</tr>
-		<tr>
-			<td style="padding: 0px; vertical-align: top;">
-				<p style="margin: 0px"><img src = "http://i.imgur.com/CrsoJbL.gif" width="540" style="padding: 0px"/></p>
-<p id="title"> Home </p>
-<p id="body">
-	This is the personal website of Alex Wen. It isn't complete yet, so don't expect too much from it.
-	<p style="margin: 0px"><img src = "http://www4b.wolframalpha.com/Calculate/MSP/MSP181ccdfa4cbidab744000032h1642bh3i0bi96?MSPStoreType=image/gif&s=2&w=200.&h=200.&cdf=Resizeable" style="padding: 0px"/></p>
-</p>
-			</td>
-			<td class="menu-bar" style="vertical-align: top;">
-				<table>
-<tr class="menu"style="background-color: #444;">
-   <td class="menu">
-       <a class="button" href="/home/">
-           <span style="width: 128px; display:inline-block;">Home</span>
-      </a>
-  </td>
-</tr>
-<tr class="menu">
-   <td class="menu">
-       <a class="button" href="/resume/Alex_Wen_Resume_v2.pdf">
-           <span style="width: 128px; display:inline-block;">Resume</span>
-      </a>
-  </td>
-</tr>
-<tr class="menu">
-   <td class="menu">
-       <a class="button" href="/projects/">
-           <span style="width: 128px; display:inline-block;">Projects</span>
-      </a>
-  </td>
-</tr>
-<tr class="menu">
-   <td class="menu">
-       <a class="button" href="/contact/">
-           <span style="width: 128px; display:inline-block;">Contact</span>
-      </a>
-  </td>
-</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-</body>
+	<body>
+		<div id="top-bar"></div>
+		<div>
+			<center style="height: 0px;"> <img src = "/photos/icon.png" style="height: 80px; position: relative; top: -40px;"/> </center>
+		</div>
+		<div class="middle-bar">
+			<p id="title">
+				Alex Wen
+				<hr/>
+			</p>
+			<p id="about-me">
+				I will fix the non-transparency of the logo later. This is a rough draw-up of my future website. Lorem ipsum dolor sit amet, 
+				consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+				nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+				qui officia deserunt mollit anim id est laborum.
+			</p>
+			<img src = "/photos/middle.jpg" style="width: 720px; height: 72px;"/>
+			
+			<p id="subtitle">
+				Links
+			</p>
+			<a href = "https://github.com/Alexander-Wen">
+				<img src = "/photos/github-logo.png" style="height: 25px; padding-top: 10px;"/>
+				Github
+			</a>
+			<br/>
+			<a href = "resume.pdf">
+				<img src = "/photos/icon.png" style="height: 25px; padding-top: 10px;"/>
+				Resume
+			</a>
+			<br/>
+			<a href = "https://www.linkedin.com/in/alexanderwen">
+				<img src = "/photos/linkedin-logo.png" style="height: 25px; padding-top: 10px;"/>
+				LinkedIn
+			</a>
+			<br/>
+			<a href = "https://www.facebook.com/Ricey.Wen">
+				<img src = "/photos/facebook-logo.png" style="height: 25px; padding-top: 10px;"/>
+				Facebook
+			</a>
+			<br/>
+			<a>
+				<img src = "/photos/email-icon.png" style="height: 25px; padding-top: 10px;"/>
+				alex[at]alexanderwen[dot]me
+			</a>
+			
+			<p id="subtitle">
+				Projects
+			</p>
+			<p id="subsubtitle">
+				Better LaTeX
+			</p>
+			<p id="content">
+				Although LaTeX is very functional and useful, it is not intuitive like Microsoft Office or Google Docs.
+				I am currently working on my own version of LaTeX that combines the functionality of LaTeX with the usability 
+				of Microsoft Office.
+			</p>
+			<p id="subsubtitle">
+				Fluid
+			</p>
+			<p id="content">
+				I am currently working on an application that takes a general template file and a general body file, and
+				generates a website with the two files.
+			</p>
+		</div>
+		<div class="bottom-bar">
+		</div>
+	</body>
 </html>
