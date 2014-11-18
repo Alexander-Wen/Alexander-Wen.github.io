@@ -9,26 +9,26 @@
 		background: #f5f5f5;
 	}
 	#background{
-		min-height:650px;
+		min-height:550px;
 		min-width: 740px;
 		width:100%;
 		background-image:url(/photos/back.jpg); 
 		background-repeat:no-repeat;
 		background-size:cover;
-		height:92vh;
+		height:100vh;
 	}
 	
 	#top-bar{
-		height: 80px;
+		height: 50px;
 		min-width: 740px;
 		background-color: #8a8a8a;
 	}
 	.title-bar{
 		width:720px;
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255,0.7);
 		position:absolute;
 		margin-left:-360px;
-		top:250px;;
+		top:190px;;
 		left:50%;
 	}
 	.bottom-bar{
@@ -41,20 +41,25 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.contact-bar{
+		height: 240px;
+		background-color: #E6E6E6;
+		margin-top: 14px;
+	}
 	
 	p#title{
 		text-align: center;
-		font-size: 100px;
+		font-size:80px;
 		color: #454545;
 		margin: 0px;
 		padding: 24px 0px 0px 0px;
 	}
 	p#about-me{
 		text-align: center;
-		font-size: 16px;
+		font-size: 20px;
 		margin: 0px;
 		color: #454545;
-		padding: 50px 50px 50px 50px;
+		padding: 40px 50px 50px 50px;
 	}
 	hr{
 		margin: 0px auto 0px auto;
@@ -84,14 +89,13 @@
 
 </head>
 	<body>
-		<div id="top-bar"></div>
-		<div>
-			<center style="height: 0px;"> <img src = "/photos/icon.png" style="height: 80px; position: relative; top: -40px;"/> </center>
-		</div>
 		
 		<div id="background">
+			<div id="top-bar"></div>
+			<div>
+				<center style="height: 0px;"> <img src = "/photos/icon.png" style="height: 70px; position: relative; top: -35px;"/> </center>
+			</div>
 			<div class="title-bar">
-			
 				<p id="title">
 					Alex Wen
 					<hr noshade/>
@@ -99,14 +103,15 @@
 				<p id="about-me">
 					I am not so sure about the title bar... This is a rough draw-up of my future website. I also need to put some kind of indicator that you can scroll down... 
 					I also need a new background image, im not so sure about this one.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-					nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-					voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-					qui officia deserunt mollit anim id est laborum.
 				</p>
 			</div>
 		</div>
-			
+		<div style="margin-top: -30px; text-align:center; color: #eee; font-size: 14px;"> <strong>SCROLL DOWN </strong> </div>
+
+		<div class="contact-bar">
+			put links in here maybe?
+		</div>
+		
 		<div class="middle-bar">
 			<p id="subtitle">
 				Links
