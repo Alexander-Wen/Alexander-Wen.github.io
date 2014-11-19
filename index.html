@@ -5,9 +5,6 @@
 <link rel="stylesheet" href="../normalize.css" />
 <link rel="shortcut icon" href="http://www.alexanderwen.me/favicon.ico" />
 <style type="text/css">
-	body{
-		background: #f5f5f5;
-	}
 	#background{
 		min-height:550px;
 		min-width: 740px;
@@ -19,32 +16,40 @@
 	}
 	
 	#top-bar{
-		height: 50px;
+		height: 60px;
 		min-width: 740px;
-		background-color: #8a8a8a;
+		background-color: rgba(255,255,255,0.5);
 	}
 	.title-bar{
 		width:720px;
+		min-width:720px;
 		background-color: rgba(255,255,255,0.7);
 		position:absolute;
 		margin-left:-360px;
 		top:190px;;
 		left:50%;
 	}
-	.bottom-bar{
-		height: 40px;
-		background-color: #8a8a8a;
-		margin: 50px 0px 0px 0px;
-	}
 	.middle-bar{
 		width: 720px;
+		min-width: 720px;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.contact-bar{
-		height: 240px;
-		background-color: #E6E6E6;
-		margin-top: 14px;
+	.grey-bar{
+		background-color: #eee;
+		margin: 0px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.lightgrey-bar{
+		background-color: #f5f5f5;
+		margin: 0px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.bottom-bar{
+		background-color: #A1A1A1;
+		margin: 0px;
 	}
 	
 	p#title{
@@ -69,20 +74,24 @@
 	}
 	
 	p#subtitle{
-		font-size: 30px;
-		margin: 50px 0px 0px 0px;
+		font-size: 34px;
+		margin: 0px;
+		color: #454545;
 	}
 	p#subsubtitle{
-		font-size: 20px;
-		margin: 10px 0px 0px 0px;
+		font-size: 24px;
+		margin: 30px 0px 0px 0px;
+		color: #454545;
 	}
 	p#content{
-		margin: 5px 0px 0px 0px;
+		font-size: 17px;
+		margin: 10px 0px 0px 0px;
+		color: #454545;
 	}
 	
 	a{
 		text-decoration: none;
-		color: #000;
+		color: #4a697e;
 		font-size: 18px;
 	}
 </style>
@@ -92,75 +101,105 @@
 		
 		<div id="background">
 			<div id="top-bar"></div>
+			
 			<div>
 				<center style="height: 0px;"> <img src = "/photos/icon.png" style="height: 70px; position: relative; top: -35px;"/> </center>
 			</div>
+			
 			<div class="title-bar">
 				<p id="title">
 					Alex Wen
 					<hr noshade/>
 				</p>
 				<p id="about-me">
-					I am not so sure about the title bar... This is a rough draw-up of my future website. I also need to put some kind of indicator that you can scroll down... 
-					I also need a new background image, im not so sure about this one.
+					Hello World! My name is Alex and I'm a first-year Computer Engineering student at the University of Waterloo.
+					I am interested in programming, technology, and longboarding. 
 				</p>
 			</div>
 		</div>
-		<div style="margin-top: -30px; text-align:center; color: #eee; font-size: 14px;"> <strong>SCROLL DOWN </strong> </div>
-
-		<div class="contact-bar">
-			put links in here maybe?
+		<div style="margin-top: -30px; margin-bottom:14px; text-align:center; color: #eee; font-size: 14px;"> <strong>SCROLL DOWN </strong> </div>
+		
+		<div class="grey-bar">
+			<div class="middle-bar">
+				<p id="subtitle">
+					Links
+				</p>
+				<a href = "https://github.com/Alexander-Wen">
+					<img src = "/photos/github-logo.png" style="height: 25px; padding-top: 10px;"/>
+					Github
+				</a>
+				<br/>
+				<a href = "resume.pdf">
+					<img src = "/photos/icon.png" style="height: 25px; padding-top: 10px;"/>
+					Resume
+				</a>
+				<br/>
+				<a href = "https://www.linkedin.com/in/alexanderwen">
+					<img src = "/photos/linkedin-logo.png" style="height: 25px; padding-top: 10px;"/>
+					LinkedIn
+				</a>
+				<br/>
+				<a href = "https://www.facebook.com/Ricey.Wen">
+					<img src = "/photos/facebook-logo.png" style="height: 25px; padding-top: 10px;"/>
+					Facebook
+				</a>
+				<br/>
+				<a>
+					<img src = "/photos/email-icon.png" style="height: 25px; padding-top: 10px;"/>
+					alex[at]alexanderwen[dot]me
+				</a>
+			</div>
 		</div>
 		
-		<div class="middle-bar">
-			<p id="subtitle">
-				Links
-			</p>
-			<a href = "https://github.com/Alexander-Wen">
-				<img src = "/photos/github-logo.png" style="height: 25px; padding-top: 10px;"/>
-				Github
-			</a>
-			<br/>
-			<a href = "resume.pdf">
-				<img src = "/photos/icon.png" style="height: 25px; padding-top: 10px;"/>
-				Resume
-			</a>
-			<br/>
-			<a href = "https://www.linkedin.com/in/alexanderwen">
-				<img src = "/photos/linkedin-logo.png" style="height: 25px; padding-top: 10px;"/>
-				LinkedIn
-			</a>
-			<br/>
-			<a href = "https://www.facebook.com/Ricey.Wen">
-				<img src = "/photos/facebook-logo.png" style="height: 25px; padding-top: 10px;"/>
-				Facebook
-			</a>
-			<br/>
-			<a>
-				<img src = "/photos/email-icon.png" style="height: 25px; padding-top: 10px;"/>
-				alex[at]alexanderwen[dot]me
-			</a>
-			
-			<p id="subtitle">
-				Projects
-			</p>
-			<p id="subsubtitle">
-				Better LaTeX
-			</p>
-			<p id="content">
-				Although LaTeX is very functional and useful, it is not intuitive like Microsoft Office or Google Docs.
-				I am currently working on my own version of LaTeX that combines the functionality of LaTeX with the usability 
-				of Microsoft Office.
-			</p>
-			<p id="subsubtitle">
-				Fluid
-			</p>
-			<p id="content">
-				I am currently working on an application that takes a general template file and a general body file, and
-				generates a website with the two files.
-			</p>
+		<div class="lightgrey-bar">
+			<div class="middle-bar">	
+				<p id="subtitle">
+					Projects
+				</p>
+				
+				<p id="subsubtitle">
+					Fluid
+				</p>
+				<p id="content">
+					I am currently working on an application that takes a general template file and a general body file, and
+					generates a website with the two files.
+				</p>
+				
+			</div>
 		</div>
+		
+		<div class="grey-bar">
+			<div class="middle-bar">	
+				<p id="subtitle">
+					Future Projects
+				</p>
+				
+				<p id="subsubtitle">
+					Better LaTeX
+				</p>
+				<p id="content">
+					Although LaTeX is very functional and useful, it is not intuitive like Microsoft Office or Google Docs.
+					I plan on creating my own version of LaTeX that combines the functionality of LaTeX with the usability 
+					of Microsoft Office.
+				</p>
+				
+				<p id="subsubtitle">
+					Better Longboard
+				</p>
+				<p id="content">
+					When I first started longboarding in 2008, I rode a pintail. Recently however, I have switched to a double-drop. 
+					Although I prefer a double-drop, it still has its flaws. I plan to build my own longboard out of carbon fiber that 
+					suits my personal needs.
+				</p>
+			</div>
+		</div>
+		
 		<div class="bottom-bar">
+			<div class="middle-bar">
+				<p style="padding: 40px 0px 40px 0px; margin: 0px; font-size:14px; color: #eee; text-alight: center;">
+					This is the personal website of Zhicheng (Alex) Wen. Copyright &#169; Alex Wen 2014
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
