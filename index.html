@@ -1,221 +1,150 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Alex Wen</title>
-<link rel="stylesheet" href="../normalize.css" />
-<link rel="shortcut icon" href="http://www.alexanderwen.me/favicon.ico" />
-<style type="text/css">
-	#background{
-		min-height:550px;
-		min-width: 740px;
-		width:100%;
-		background-image:url(/photos/back.jpg); 
-		background-repeat:no-repeat;
-		background-size:cover;
-		height:100vh;
-	}
-	
-	#top-bar{
-		height: 60px;
-		min-width: 740px;
-		background-color: rgba(255,255,255,0.5);
-	}
-	.title-bar{
-		width:720px;
-		min-width:720px;
-		background-color: rgba(255,255,255,0.7);
-		position:absolute;
-		margin-left:-360px;
-		top:190px;;
-		left:50%;
-	}
-	.middle-bar{
-		width: 720px;
-		min-width: 720px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.grey-bar{
-		background-color: #eee;
-		margin: 0px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-	.lightgrey-bar{
-		background-color: #f5f5f5;
-		margin: 0px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-	.bottom-bar{
-		background-color: #A1A1A1;
-		margin: 0px;
-	}
-	
-	p#title{
-		text-align: center;
-		font-size:80px;
-		color: #454545;
-		margin: 0px;
-		padding: 24px 0px 0px 0px;
-	}
-	p#about-me{
-		text-align: center;
-		font-size: 20px;
-		margin: 0px;
-		color: #454545;
-		padding: 0px 50px 50px 50px;
-	}
-	hr{
-		margin: 15px auto 30px auto;
-		width: 200px;
-		background-color: #585858;
-		border-color: #585858;	
-	}
-	
-	p#subtitle{
-		font-size: 34px;
-		margin: 0px;
-		color: #454545;
-	}
-	p#subsubtitle{
-		font-size: 24px;
-		margin: 30px 0px 0px 0px;
-		color: #454545;
-	}
-	p#content{
-		font-size: 17px;
-		margin: 10px 0px 0px 0px;
-		color: #454545;
-	}
-	
-	a{
-		text-decoration: none;
-		color: #4a697e;
-		font-size: 18px;
-	}
-</style>
+<html lang="en">
 
-</head>
+	<head>
+		<title>Alex Wen</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="http://www.alexanderwen.me/favicon.ico" />
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
 	<body>
-		
-		<div id="background">
-			<div id="top-bar"></div>
-			
-			<div>
-				<center style="height: 0px;"> <img src = "/photos/icon.png" style="height: 70px; position: relative; top: -35px;"/> </center>
+	
+		<!-- Navbar -->
+		<nav class="navbar navbar-default navbar-static-top" style="margin:0px; border:0px;" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="">Alexander</a>
+				</div>
+				
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">Home</a></li>
+					</ul>
 			</div>
-			
-			<div class="title-bar">
-				<p id="title">
-					Alex Wen
-					<hr noshade/>
-				</p>
-				<p id="about-me">
-					Hello World! My name is Alex and I'm interested in programming, technology, and longboarding. 
-					I'm currently a first-year Computer Engineering student at the University of Waterloo.
-				</p>
-			</div>
-		</div>
-		<div style="margin-top: -30px; margin-bottom:14px; text-align:center; color: #eee; font-size: 14px;"> <strong>SCROLL DOWN </strong> </div>
+		</nav>
 		
-		<div class="grey-bar">
-			<div class="middle-bar">
-				<p id="subtitle">
-					Links
-				</p>
-				<a href = "https://github.com/Alexander-Wen">
-					<img src = "/photos/github-logo.png" style="height: 25px; padding-top: 10px;"/>
-					Github
-				</a>
-				<br/>
-				<a href = "resume.pdf">
-					<img src = "/photos/icon.png" style="height: 25px; padding-top: 10px;"/>
-					Resume
-				</a>
-				<br/>
-				<a href = "https://www.linkedin.com/in/alexanderwen">
-					<img src = "/photos/linkedin-logo.png" style="height: 25px; padding-top: 10px;"/>
-					LinkedIn
-				</a>
-				<br/>
-				<a href = "https://www.facebook.com/Ricey.Wen">
-					<img src = "/photos/facebook-logo.png" style="height: 25px; padding-top: 10px;"/>
-					Facebook
-				</a>
-				<br/>
-				<a>
-					<img src = "/photos/email-icon.png" style="height: 25px; padding-top: 10px;"/>
-					alex[at]alexanderwen[dot]me
-				</a>
+		<!-- Header -->
+		<div class="intro-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="intro-message" >
+							<h1>Alex Wen</h1>
+							<hr class="intro-divider">
+							<h3>
+								Hello World! My name is Alex and I'm interested in programming, technology, 
+								and longboarding. I'm currently a first-year Computer Engineering student 
+								at the University of Waterloo.
+							</h3>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<div class="lightgrey-bar">
-			<div class="middle-bar">	
-				<p id="subtitle">
-					Projects
-				</p>
-				
-				<p id="subsubtitle">
-					Fluid
-				</p>
-				<p id="content">
-					I am currently working on an application that takes a general template file, and a 
-					general body file to generate a fully functioning website.
-				</p>
-				
+		<!-- Projects -->
+		<div class="content-section-a">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-sm-12">
+						<h1>Projects</h1>
+						
+						<h2>Fluid</h2>
+						<p id="content-text">
+							I am currently working on an application that takes a general 
+							template file, and a general body file to generate a fully functioning website.
+						</p>
+						
+						<h2>Longboard</h2>
+						<p id="content-text">
+							When I first started longboarding in 2008, I rode a pintail. Recently however, 
+							I have switched to a double-drop. Although I prefer a double-drop, it still has 
+							its flaws. I plan to build my own longboard out of carbon fiber that suits my personal 
+							needs. I currently find that my longboard is a bit too large for my taste. To decrease 
+							weight, I can make the board thinner and shorter. What I also found while longboarding, 
+							is that there is no braking mechanism. I will have to also implement a braking system.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<div class="grey-bar">
-			<div class="middle-bar">	
-				<p id="subtitle">
-					Future Projects
-				</p>
-				
-				<p id="subsubtitle">
-					Better LaTeX
-				</p>
-				<p id="content">
-					Although LaTeX is very functional and useful, it is not intuitive like Microsoft Office or Google Docs.
-					I plan on creating my own version of LaTeX that combines the functionality of LaTeX with the intuitiveness 
-					of Microsoft Office.
-				</p>
-				
-				<p id="subsubtitle">
-					Better Longboard
-				</p>
-				<p id="content">
-					When I first started longboarding in 2008, I rode a pintail. Recently however, I have switched to a double-drop. 
-					Although I prefer a double-drop, it still has its flaws. I plan to build my own longboard out of carbon fiber that 
-					suits my personal needs. I currently find that my longboard is a bit too large for my taste. To decrease weight, I can 
-					make the board thinner and shorter. What I also found while longboarding, is that there is no braking mechanism. I will have 
-					to also implement a braking system. 
-				</p>
-				
-				<p id="subsubtitle">
-					Better Keyboard
-				</p>
-				<p id="content">
-					I currently own the Logitech G710+ Mechanical Keyboard with cherry mx brown key switches. Although I really like the keyboard, 
-					it has quite a lot of flaws. For example, the number pad has some mathematical operations but not all. It is missing a few key 
-					characters such as brackets, the equals key, and the exponent key. This makes typing in mathematical operations into the computer 
-					cumbersome. Another problem I found is that although I rarely use the function keys, they take up a lot of space. Since I personally 
-					don't use the function keys all that often, I can probably remove them and add a function modifier. Additionally, I also rarely use insert/home/pageup 
-					buttons, so those can be removed as well. To improve ergonomics, I would like to split the keyboard, and in the middle have a dock for my phone. 
-					The keyboard will have a wireless charger inside of it to charge the phone, and have nfc capabilities to activate certain features such as forwarding 
-					all notifications to my computer. 
-				</p>
+		<!-- Future Projects -->
+		<div class="content-section-b">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-sm-12">
+						<h1>Future Projects</h1>
+						
+						<h2>Better LaTeX</h2>
+						<p id="content-text">
+							Although LaTeX is very functional and useful, it is not intuitive like Microsoft Office or 
+							Google Docs. I plan on creating my own version of LaTeX that combines the functionality of 
+							LaTeX with the intuitiveness of Microsoft Office.
+						</p>
+						
+						<h2>Better Keyboard</h2>
+						<p id="content-text">
+							I currently own the Logitech G710+ Mechanical Keyboard with cherry mx brown key switches. 
+							Although I really like the keyboard, it has quite a lot of flaws. For example, the number 
+							pad has some mathematical operations but not all. It is missing a few key characters such as 
+							brackets, the equals key, and the exponent key. This makes typing in mathematical operations 
+							into the computer cumbersome. Another problem I found is that although I rarely use the function 
+							keys, they take up a lot of space. Since I personally don't use the function keys all that often,
+							I can probably remove them and add a function modifier. Additionally, I also rarely use 
+							insert/home/pageup buttons, so those can be removed as well. To improve ergonomics, I would like 
+							to split the keyboard, and in the middle have a dock for my phone. The keyboard will have a wireless
+							charger inside of it to charge the phone, and have nfc capabilities to activate certain features such
+							as forwarding all notifications to my computer.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<div class="bottom-bar">
-			<div class="middle-bar">
-				<p style="padding: 40px 0px 40px 0px; margin: 0px; font-size:14px; color: #eee; text-alight: center;">
-					This is the personal website of Zhicheng (Alex) Wen. Copyright &#169; Alex Wen 2014
-				</p>
+		<!-- Contact -->
+		<div class="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="connect-font">Connect With Me:</h2>
+					</div>
+					<div class="col-lg-6">
+						<ul class="list-inline banner-social-buttons">
+							<li>
+								<a href="https://github.com/Alexander-Wen" class="btn btn-default btn-lg"></span><span class="network-name">Github</span></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/alexanderwen" class="btn btn-default btn-lg"></i> <span class="network-name">Linkedin</span></a>
+							</li>
+							<li>
+								<a href="mailto:alex@alexanderwen.me" class="btn btn-default btn-lg"></i> <span class="network-name">Email</span></a>
+							</li>
+							<li>
+								<a href="resume.pdf" class="btn btn-default btn-lg"></i> <span class="network-name">Resume</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
+		
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					<p style="font-size:14px; color: #eee;">
+						This is the personal website of Zhicheng (Alex) Wen. Copyright &#169; Alex Wen 2014
+					</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
