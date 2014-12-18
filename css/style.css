@@ -5,6 +5,12 @@ body {
 	background-color: #f4f4f4;
 }
 
+/*Navbar*/
+.navbar-default{
+	background-color: rgba(255,255,255,0.5);
+	border: 0px;
+}
+
 /*Header*/
 .vertical-center {
     display: table-cell;
@@ -16,7 +22,7 @@ body {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/img/b1.jpg) no-repeat center center;
+    background: url(/img/b4.jpg) no-repeat center center;
     background-size: cover;
 }
 .intro-message {
@@ -26,32 +32,26 @@ body {
 }
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	padding-top: 50px;
+    font-size: 7em;
 }
 
 /*Content*/
-.content-section-a {
+.content-section {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
 
-.content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+p#content-title {
+	font-size: 1em;
+	color: #0f519f;
+	padding-top: 80px;
 }
-p#content-text{
-	font-size: 17px;
+
+p#content-text {
+	font-size: 18px;
 }
+
 
 /*Connect*/
 .network-name {
