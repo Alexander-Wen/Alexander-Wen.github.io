@@ -6,7 +6,7 @@
 	>picture(width:90%)
 		/img/profile.jpg
 	<
-<body
+<
 
 >body ("Projects", "WHAT I HAVE BEEN UP TO LATELY")
 	>content("Carbon Fiber Longboard")
@@ -21,7 +21,7 @@
 		I am currently working on an application that takes a general template file, and a 
 		general body file to generate a fully functioning website.
 	<
-<body
+<
 
 >body ("Future Projects", "WHAT I WILL BE DOING IN THE FUTURE")
 	>content("Better LaTeX")
@@ -42,10 +42,10 @@
 		charger inside of it to charge the phone, and have nfc capabilities to activate certain features such
 		as forwarding all notifications to my computer.
 	<
-<body
+<
 
 >body ("Design Team", "WHAT I AM INVOLVED IN")
 	>content("Clean Snomobile Design Team")
 	
 	<
-<body
+<
