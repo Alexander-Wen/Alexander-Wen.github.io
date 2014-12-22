@@ -22,7 +22,7 @@ body {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/img/b4.jpg) no-repeat center center;
+    background: url(../img/b4.jpg) no-repeat center center;
     background-size: cover;
 }
 .intro-message {
@@ -38,10 +38,8 @@ body {
 }
 
 /*Content*/
-.content-section {
-    padding-top: 50px;
-	padding-bottom: 50px;
-    background-color: #f8f8f8;
+.content{
+	padding-bottom: 80px;
 }
 
 p#content-title {
@@ -65,7 +63,7 @@ p#content-text {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(/img/b1.jpg) no-repeat center center;
+    background: url(../img/b1.jpg) no-repeat center center;
     background-size: cover;
 }
 .connect-font {
