@@ -14,7 +14,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/particle-style.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -22,9 +22,24 @@
 </head>
 
 <body>
-  <div class="videoWrap">
-    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/YDdywmlDFCQ" frameborder="0" allowfullscreen></iframe>
+  <div id="particles-js"></div>
+
+  <div class="container" id="cent">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="jumbotron">
+        <h1 class="text-center">Linear</h1>
+        <h3 class="text-center">Jeff Zarnett</h3>
+        <audio controls style="width:100%;">
+          <source src="linear.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
   </div>
+
+  <script src="../js/particles.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/alex.js"></script>
 </body>
 
 </html>
